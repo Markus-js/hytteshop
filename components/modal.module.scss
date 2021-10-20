@@ -1,0 +1,73 @@
+// // other modals z-index 10
+// // slider modal z-index 12
+// // layer so that they don´t conflict, when closing
+// .carousel-overlay {
+//   z-index: 11;
+// }
+
+@import "../styles/breakpoints.scss";
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+}
+.overlay_success {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(87, 190, 78, 0.2);
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+}
+
+.modal_container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  z-index: 999;
+  border-radius: 5px;
+
+  .modal_content {
+    padding: 10px 20px;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  left: 102%;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+@media (max-width: $breakpoint-lg) {
+  .modal_container {
+    width: 80vw;
+  }
+}
+
+@media (max-width: $breakpoint-xs) {
+  .modal_container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+  }
+}

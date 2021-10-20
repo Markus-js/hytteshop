@@ -1,0 +1,16 @@
+.content_wrapper {
+  padding: 15px 20px;
+  h3 {
+    padding: 10px 0;
+  }
+  &_centered {
+    padding: 15px 20px;
+    text-align: center;
+    p {
+      text-align: left;
+    }
+    h4 {
+      padding-bottom: 20px;
+    }
+  }
+}
