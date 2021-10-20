@@ -56,9 +56,19 @@ export const getServerSideProps = async (context: GetServerSidePropsContext) => 
   // console.log("SERVER", data)
   // Tilpas props til endpoint
   return {
+
+
+    // !!!!!!!! Brug den her istedet 
+    // props: {
+    //   hytter: data
+    // } 
+
+
     //Endpoint => props:hytter => Home(hytter)
     props: {
       hytter: data.hytter
     }
+
+
   }
 }

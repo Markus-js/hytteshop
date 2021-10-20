@@ -81,19 +81,14 @@ const ModalChildReservation = () => {
     }, [initializeCount])
 
 
-    // const submitReservation = async () => {
-    //     const response = await fetch("/api/hytter/", {
-    //         method: "PUT",
-    //         body: JSON.stringify({ hytter }),
-    //         headers: {
-    //             "Content-Type": "application/json"
-    //         }
-    //     })
+    // HER KAN UPDATERING AF IS_RESERVED SKRIVES
+    // hvis success er TRUE, så er mail sendt og authenticated.
+    // Derfor vil det være oplagt at sætte is_reserved til true efter success.
 
-    //     const data = await response.json()
+
     //     const currentHytte = await data.hytter.items.find(item => item.id === id)
     //     console.log(currentHytte.is_reserved)
-    // }
+
 
 
     return (
